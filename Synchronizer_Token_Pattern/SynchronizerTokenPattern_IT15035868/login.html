@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<style></style>-->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<h2><center>Login Form</center></h2>
+
+<form action="login_action.php" method="post">
+    <div class="imgcontainer">
+        <img src="images/profile.png" width='200' height='200'>
+    </div>
+
+    <div class="container">
+        <div class="">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required id="uname">
+            <input type="hidden" name="token" value="<?php echo $token; ?>" /><br>
+        </div>
+        <div class="">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required id="pswrd">
+        </div>
+        <div class="">
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+    </div>
+</form>
+</body>
+</html>
